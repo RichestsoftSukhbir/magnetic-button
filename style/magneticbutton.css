@@ -1,0 +1,69 @@
+body {
+  height: 100dvh;
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.magnetic-click {
+    position: relative;
+    overflow: hidden;
+    height: 4.26rem;
+    padding: 0 2.5rem;
+    display: inline-block;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 2.125em;
+    box-shadow: 0 0 0 1px rgba(28, 29, 32, 0.175);
+    -webkit-border-radius: 2.125em;
+    -moz-border-radius: 2.125em;
+    -ms-border-radius: 2.125em;
+    -o-border-radius: 2.125em;
+}
+.magnetic-click.magnetic-normal .magnetic-overlay {
+  transform: translate(0, 0, 0) !important;
+  -webkit-transform: translate(0, 0, 0) !important;
+  -moz-transform: translate(0, 0, 0) !important;
+  -ms-transform: translate(0, 0, 0) !important;
+  -o-transform: translate(0, 0, 0) !important;
+}
+.magnetic-dark {
+  background-color: #121212;
+}
+.magnetic-dark .magnetic-text {
+  color: #fff !important;
+}
+.magnetic-overlay {
+    background: #455CE9;
+    position: absolute;
+    width: 150%;
+    height: 200%;
+    border-radius: 50%;
+    top: -50%;
+    left: -25%;
+    transform: translate3d(0,-76%,0);
+    will-change: transform;
+    transition: background-color ease-in-out .25s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate3d(0,-76%,0);
+    -moz-transform: translate3d(0,-76%,0);
+    -ms-transform: translate3d(0,-76%,0);
+    -o-transform: translate3d(0,-76%,0);
+    -webkit-transition: background-color ease-in-out .25s;
+    -moz-transition: background-color ease-in-out .25s;
+    -ms-transition: background-color ease-in-out .25s;
+    -o-transition: background-color ease-in-out .25s;
+}
+.magnetic-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
